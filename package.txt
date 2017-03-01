@@ -1,0 +1,12 @@
+{
+  name
+  version: 1.0.0,
+  scripts
+    sass:dev: ./node_modules/.bin/gulp,
+    sass:prod: ./node_modules/.bin/gulp sass:prod
+  },
+  dependencies: {},
+  devDependencies: {
+    browser-sync del glob gulp gulp-autoprefixer gulp-imagemin gulp-jade-drupal gulp-plumber gulp-sass gulp-sass-lint gulp-sourcemaps gulp-watch node-sass-globbing run-sequence vanilla-framework
+  }
+}
