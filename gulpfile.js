@@ -16,13 +16,13 @@ var gulp = require("gulp"),
 //############################
 
 //name of the drupal theme:
-var _themeName = "islandarchives";
+var _themeName = "orion";
 
 //url of the remote site
-var _url = "http://hp1.islandarchives.ca/";
+var _url = "http://armapei.discoveryspace.ca/";
 
 //path to the themes assets (compiled css, js, imgs) dir
-var _path = "/sites/all/themes/islandarchives/build";
+var _path = "/themes/orion/build";
 
 //make sure the 2 Dirs are correct
 var config = {
@@ -51,9 +51,9 @@ var sass_config = {
   includePaths: [
     //'node_modules/breakpoint-sass/stylesheets/',
     //'node_modules/singularitygs/stylesheets/',
-    'node_modules/compass-mixins/lib/',
-    'node_modules/bourbon/app/assets/stylesheets/',
-    'node_modules/bourbon-neat/app/assets/stylesheets/'
+    //'node_modules/compass-mixins/lib/',
+    //'node_modules/bourbon/app/assets/stylesheets/',
+    //'node_modules/bourbon-neat/app/assets/stylesheets/'
   ]
 
 
@@ -127,7 +127,8 @@ gulp.task("js", function() {
 gulp.task("browserSync", ["sass_dev", "js"], function() {
 
   //RegExp for finding and removing main css file rather that just override
-  var _regex = new RegExp("@import.*" + _path + ".*;", "g");
+  //var _regex = new RegExp("@import.*" + _path + ".*;", "g");
+  var _regex = new RegExp("<link.*\/" + _themeName + "\/css\/.*", "g");
 
   browserSync.init({
     proxy: {

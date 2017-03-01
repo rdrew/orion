@@ -1,0 +1,1 @@
+{"version":3,"sources":["styles.scss"],"names":[],"mappings":"AAAA;EACE,sBAAqB,EACtB;;AACD;EACE,eAAc;EACd,sBAAqB,EACtB;;AACD;EACE,aAAY,EACb","file":"styles.css","sourcesContent":[".site-logo {\n  display: inline-block;\n}\n.site-name {\n  font-size: 2em;\n  display: inline-block;\n}\n.site-logo img {\n  width: 200px;\n}\n"]}
