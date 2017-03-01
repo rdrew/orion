@@ -1,0 +1,14 @@
+<?php
+
+
+
+/**
+ * This would add a js file to olny the front page
+ */
+
+function orion_preprocess_page(&$variables) {
+  //if ($variables['is_front']) {
+  //
+    //$variables['#attached']['library'][] = 'orion/fancy-effect';
+  //}
+}

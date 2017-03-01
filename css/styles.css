@@ -1,0 +1,10 @@
+.site-logo {
+  display: inline-block;
+}
+.site-name {
+  font-size: 2em;
+  display: inline-block;
+}
+.site-logo img {
+  width: 200px;
+}
