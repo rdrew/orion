@@ -1,0 +1,27 @@
+#page {
+
+  @include row;
+
+
+}
+
+@include on-desktop {
+  #main {
+    @include row-base;
+
+    .main-content {
+      @include column(6, $first: true);
+      @include push-column(3);
+    }
+
+    #sidebar-first {
+      @include column(3);
+      @include pull-column(6);
+    }
+    #sidebar-second {
+      @include column(3);
+    }
+
+
+  }
+}

@@ -20,6 +20,8 @@
   },
   "homepage": "https://github.com/rdrew/orion#readme",
   "devDependencies": {
+    "bourbon": "^4.3.3",
+    "bourbon-neat": "^2.0.0",
     "browser-sync": "^2.18.8",
     "del": "^2.2.2",
     "glob": "^7.1.1",

@@ -8,8 +8,9 @@ var gulp = require("gulp"),
   importer = require('node-sass-globbing'),
   sourcemaps = require('gulp-sourcemaps'),
   imagemin = require('gulp-imagemin'),
-  sassLint = require('gulp-sass-lint');
-
+  sassLint = require('gulp-sass-lint'),
+  neat = require('bourbon-neat').includePaths,
+  bourbon = require('bourbon').includePaths;
 
 //############################
 //Edit these paths and options
@@ -49,6 +50,7 @@ var sass_config = {
   importer: importer,
 
   includePaths: [
+    'node_modules'
     //'node_modules/breakpoint-sass/stylesheets/',
     //'node_modules/singularitygs/stylesheets/',
     //'node_modules/compass-mixins/lib/',
