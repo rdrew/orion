@@ -11,7 +11,7 @@ libraries:
   - orion/global-js
 
 stylesheets-remove: 
-  #- core/assets/vendor/normalize-css/normalize.css
+  - core/assets/vendor/normalize-css/normalize.css
   #- core/modules/system/css/system.module.css
 
 
