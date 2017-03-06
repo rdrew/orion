@@ -2272,7 +2272,7 @@ sub {
   *zoom: 1;
   margin-right: auto;
   margin-left: auto;
-  max-width: 1030px;
+  max-width: 1440px;
   padding-left: 20px;
   padding-right: 20px; }
   #page:before, #page:after {
@@ -2289,30 +2289,62 @@ sub {
       content: " "; }
     #main:after {
       clear: both; }
-    #main .main-content {
-      display: block;
-      float: left;
-      min-height: 1px;
-      position: relative;
-      *margin-right: -1px;
-      width: 49.02913%;
-      left: 25.48544%; }
-    #main #sidebar-first {
-      display: block;
-      float: left;
-      min-height: 1px;
-      position: relative;
-      *margin-right: -1px;
-      width: 23.54369%;
-      margin-left: 1.94175%;
-      right: 50.97087%; }
-    #main #sidebar-second {
-      display: block;
-      float: left;
-      min-height: 1px;
-      position: relative;
-      *margin-right: -1px;
-      width: 23.54369%;
-      margin-left: 1.94175%; } }
+  .layout-two-sidebars .main-content {
+    display: block;
+    float: left;
+    min-height: 1px;
+    position: relative;
+    *margin-right: -1px;
+    width: 49.02913%;
+    left: 25.48544%; }
+  .layout-two-sidebars #sidebar-first {
+    display: block;
+    float: left;
+    min-height: 1px;
+    position: relative;
+    *margin-right: -1px;
+    width: 23.54369%;
+    margin-left: 1.94175%;
+    right: 50.97087%; }
+  .layout-two-sidebars #sidebar-second {
+    display: block;
+    float: left;
+    min-height: 1px;
+    position: relative;
+    *margin-right: -1px;
+    width: 23.54369%;
+    margin-left: 1.94175%; }
+  .layout-one-sidebar.layout-sidebar-first .main-content {
+    display: block;
+    float: left;
+    min-height: 1px;
+    position: relative;
+    *margin-right: -1px;
+    width: 74.51456%;
+    left: 25.48544%; }
+  .layout-one-sidebar.layout-sidebar-first #sidebar-first {
+    display: block;
+    float: left;
+    min-height: 1px;
+    position: relative;
+    *margin-right: -1px;
+    width: 23.54369%;
+    margin-left: 1.94175%;
+    right: 76.45631%; }
+  .layout-one-sidebar.layout-sidebar-second .main-content {
+    display: block;
+    float: left;
+    min-height: 1px;
+    position: relative;
+    *margin-right: -1px;
+    width: 74.51456%; }
+  .layout-one-sidebar.layout-sidebar-second #sidebar-second {
+    display: block;
+    float: left;
+    min-height: 1px;
+    position: relative;
+    *margin-right: -1px;
+    width: 23.54369%;
+    margin-left: 1.94175%; } }
 
 /*# sourceMappingURL=styles.css.map */
