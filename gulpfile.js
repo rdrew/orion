@@ -20,7 +20,7 @@ var gulp = require("gulp"),
 var _themeName = "orion";
 
 //url of the remote site
-var _url = "http://armapei.discoveryspace.ca/";
+var _url = "http://istudies.discoveryspace.ca";
 
 //path to the themes assets (compiled css, js, imgs) dir
 var _path = "/themes/orion/build";
