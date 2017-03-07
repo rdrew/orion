@@ -10,9 +10,26 @@ libraries:
   - orion/global-css
   - orion/global-js
 
-stylesheets-remove: 
-  - core/assets/vendor/normalize-css/normalize.css
-  #- core/modules/system/css/system.module.css
+# The "libraries-override:" section will allow you to:
+# - Replace an entire library.
+# - Remove an entire library.
+# - Replace an asset in a library with another asset.
+# - Remove an asset from a library.
+libraries-override:
+  core/normalize: false
+  system/base:
+    css:
+      component:
+        css/components/clearfix.module.css: false
+  classy/base:
+    css:
+      component:
+        css/components/breadcrumb.css: false
+        css/components/button.css: false
+        css/components/more-link.css: false
+        css/components/pager.css: false
+        css/components/tabs.css: false
+
 
 
 # This section lists the regions defined in Zen's default page.html.twig and
