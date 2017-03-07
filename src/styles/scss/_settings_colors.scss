@@ -20,7 +20,7 @@ $color-x-dark:           #000 !default;
 $color-negative:         #d73024 !default;
 $color-warning:          #f99b11 !default;
 //$color-positive:         #0f8420 !default;
-$color-positive:         $color-blue;
+$color-positive:         $color-link;
 $color-information:      #0099cc;
 
 $color-input-shadow:     rgba($color-x-dark, .12) !default;
@@ -34,3 +34,7 @@ $states: (
   success: $color-positive,
   information: $color-information
 );
+$base-border: 1px solid $color-light-grey;
+$dotted-border: 1px dotted $color-light-grey;
+$big-border:  3px solid $color-light-grey;
+
