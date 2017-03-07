@@ -1,0 +1,36 @@
+
+// Global color settings
+
+$color-yellow: #fff400;
+$color-green: #006e3a;
+$color-blue:        #0099cc;
+$color-transparent:      transparent !default;
+$color-light-grey: #efefef;
+
+$color-brand:            #333 !default;
+/*$color-link:        #007aa6 !default;*/
+$color-link: darken($color-blue, 10%);        
+
+$color-x-light:          #fff !default;
+$color-light:            #f7f7f7 !default;
+$color-mid-light:        #cdcdcd !default;
+$color-mid-dark:         #666 !default;
+$color-dark:             #333 !default;
+$color-x-dark:           #000 !default;
+$color-negative:         #d73024 !default;
+$color-warning:          #f99b11 !default;
+//$color-positive:         #0f8420 !default;
+$color-positive:         $color-blue;
+$color-information:      #0099cc;
+
+$color-input-shadow:     rgba($color-x-dark, .12) !default;
+
+// for _patterns_grid-list.scss
+$grid-border-style:      1px dotted $color-mid-light !default;
+
+$states: (
+  error: $color-negative,
+  warning: $color-warning,
+  success: $color-positive,
+  information: $color-information
+);

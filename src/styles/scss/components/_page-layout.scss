@@ -1,0 +1,60 @@
+
+//$layout_max_width: 1200px;
+$layout_max_width: 1440px;
+
+#page {
+  @include row($layout_max_width);
+}
+
+@include on-desktop {
+  #main {
+    @include row-base;
+  }
+  // #############
+  // both sidebars
+  // #############
+  .layout-two-sidebars {
+    .main-content {
+      @include column(6, $first: true);
+      @include push-column(3);
+    }
+
+    #sidebar-first {
+      @include column(3);
+      @include pull-column(6);
+    }
+
+    #sidebar-second {
+      @include column(3);
+    }
+  }
+  // #############
+  // left sidebar
+  // #############
+  .layout-one-sidebar.layout-sidebar-first {
+    .main-content {
+      @include column(9, $first: true);
+      @include push-column(3);
+    }
+
+    #sidebar-first {
+      @include column(3);
+      @include pull-column(9);
+    }
+
+  }
+
+  // #############
+  // right sidebar
+  // #############
+  .layout-one-sidebar.layout-sidebar-second {
+
+    .main-content {
+      @include column(9, $first: true);
+    }
+
+    #sidebar-second {
+      @include column(3);
+    }
+  }
+}

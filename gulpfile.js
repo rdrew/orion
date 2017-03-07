@@ -76,7 +76,9 @@ gulp.task("clean", function() {
 // ##################
 
 gulp.task("sass_dev", function() {
-  return gulp.src(config.srcDir + "/sass/**/*.scss")
+  //this gets stuff in subfolders also and i dont want that atm
+  ////return gulp.src(config.srcDir + "/styles/scss/**/*.scss")
+  return gulp.src(config.srcDir + "/styles/scss/*.scss")
     .pipe(sourcemaps.init())
     .pipe(sass(sass_config).on("error", sass.logError))
     .pipe(autoprefixer())
@@ -90,7 +92,9 @@ gulp.task("sass_dev", function() {
 // ##################
 
 gulp.task("sass_prod", function() {
-  return gulp.src(config.srcDir + "/sass/**/*.scss")
+  //this gets stuff in subfolders also and i dont want that atm
+  ////return gulp.src(config.srcDir + "/styles/scss/**/*.scss")
+  return gulp.src(config.srcDir + "/styles/scss/*.scss")
     .pipe(sourcemaps.init())
     .pipe(sass(sass_config).on("error", sass.logError))
     .pipe(autoprefixer())
@@ -195,7 +199,7 @@ gulp.task("browserSync", ["sass_dev", "js"], function() {
 // ##################
 
 gulp.task("watch", ["browserSync", "js", "images", "sass_dev"], function() {
-  gulp.watch(config.srcDir + "/sass/**/*.scss", ["sass_dev"]);
+  gulp.watch(config.srcDir + "/styles/scss/**/*.scss", ["sass_dev"]);
   gulp.watch(config.srcDir + "/img/**/*", ["images"]);
   gulp.watch(config.srcDir + "/js/**/*.js", ["js"]);
 });

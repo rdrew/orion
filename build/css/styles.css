@@ -2271,6 +2271,12 @@ sub {
   line-height: .7;
   /*color: $color-green;*/ }
 
+.page-node-type-book .page-title {
+  display: none; }
+
+#block-orion-local-tasks {
+  display: none; }
+
 #page {
   *zoom: 1;
   margin-right: auto;
