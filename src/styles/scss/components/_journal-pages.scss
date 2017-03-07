@@ -1,8 +1,16 @@
 .page-node-type-book .page-title {
   display: none;
 
-  
+
 }
 #block-orion-local-tasks{
-display:none;
+  display:none;
+}
+.menu--account ul {
+
+  @extend .p-inline-list--middot;
+  li {
+    @extend .p-inline-list__item;
+  }
+
 }
