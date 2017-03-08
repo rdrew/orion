@@ -11,9 +11,9 @@ global-js:
 
 slicknav:
   js: 
-    js/jquery.slicknav.js: {}
-  css: 
-    theme: 
-      css/slicknav.css: {}
+    build/js/jquery.slicknav.js: {}
+  #css: 
+    #theme: 
+      #build/css/slicknav.css: {}
 
 
