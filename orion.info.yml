@@ -9,6 +9,7 @@ screenshot: screenshot.gif
 libraries: 
   - orion/global-css
   - orion/global-js
+  - orion/slicknav
 
 stylesheets-remove: 
   - core/assets/vendor/normalize-css/normalize.css

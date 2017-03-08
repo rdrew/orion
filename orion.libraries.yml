@@ -9,3 +9,11 @@ global-js:
   dependencies:
     - core/jquery
 
+slicknav:
+  js: 
+    js/jquery.slicknav.js: {}
+  css: 
+    theme: 
+      css/slicknav.css: {}
+
+
