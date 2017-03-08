@@ -1,5 +1,7 @@
 .region-sidebar-first {
-
+  @include on-tablet-down {
+    display: none;
+  }
   border-right: $big-border;
 
   .menu {

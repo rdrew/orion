@@ -3,13 +3,13 @@
 
 $color-yellow: #fff400;
 $color-green: #006e3a;
-$color-blue:        #0099cc;
+$color-blue:        #007399;
 $color-transparent:      transparent !default;
 $color-light-grey: #efefef;
 
 $color-brand:            #333 !default;
 /*$color-link:        #007aa6 !default;*/
-$color-link: darken($color-blue, 10%);        
+$color-link: $color-blue;        
 
 $color-x-light:          #fff !default;
 $color-light:            #f7f7f7 !default;
@@ -20,7 +20,7 @@ $color-x-dark:           #000 !default;
 $color-negative:         #d73024 !default;
 $color-warning:          #f99b11 !default;
 //$color-positive:         #0f8420 !default;
-$color-positive:         $color-link;
+$color-positive:         $color-blue;
 $color-information:      #0099cc;
 
 $color-input-shadow:     rgba($color-x-dark, .12) !default;
@@ -37,4 +37,4 @@ $states: (
 $base-border: 1px solid $color-light-grey;
 $dotted-border: 1px dotted $color-light-grey;
 $big-border:  3px solid $color-light-grey;
-
+$base-border-radius: 4px;

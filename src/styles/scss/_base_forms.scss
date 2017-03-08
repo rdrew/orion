@@ -71,6 +71,7 @@
     }
 
     &[type='submit'] {
+      border-radius: $base-border-radius;
       background-color: $color-positive;
       border: 0;
       color: $color-x-light;
