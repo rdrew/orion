@@ -1,19 +1,19 @@
 footer {
 
   border-top: $big-border;
-margin-top: 1rem;
-padding-top: 1rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
 
 
 }
 .block {
   h2 {
-  
+
     margin-bottom: .7rem;
     margin-top: .8rem;
-  
+
   }
-  
+
 }
 
 
@@ -21,7 +21,7 @@ padding-top: 1rem;
 
 
 .site-search {
-  
+
   margin-top: 1.1rem;
   .form {
     text-align: right;
@@ -35,5 +35,7 @@ padding-top: 1rem;
 
 
 #search-block-form {
-  text-align: right;
+  @include on-desktop {
+    text-align: right;
+  }
 }

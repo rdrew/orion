@@ -1,27 +1,35 @@
 //layout
+
 .region-header {
-
-  @include row-base;
-
-  .branding {
-@include column(6, $first: true);
-
-
-  }
-  .site-search {
-
-@include column(6);
-
-
+  @include on-mobile {
+    justify-content: center;
+    text-align: center;
   }
 
+  @include on-desktop() {
+
+    @include row-base;
+
+    .branding {
+      @include column(6, $first: true);
+
+
+    }
+    .site-search {
+
+      @include column(6);
+
+
+    }
+
+  }
 }
 //style
 .region-header {
 
   border-bottom: 3px solid $color-light-grey; 
   padding: 1rem 0;
-margin-bottom: 2rem;
+  margin-bottom: 2rem;
 
 }
 

@@ -134,7 +134,8 @@ gulp.task("browserSync", ["sass_dev", "js"], function() {
 
   //RegExp for finding and removing main css file rather that just override
   //var _regex = new RegExp("@import.*" + _path + ".*;", "g");
-  var _regex = new RegExp("<link.*\/" + _themeName + "\/css\/.*", "g");
+  //var _regex = new RegExp("<link.*\/" + _themeName + "\/css\/.*", "g");
+  var _regex = new RegExp("@import.*\/" + _themeName + "\/build\/css.*", "g");
 
   browserSync.init({
     proxy: {
