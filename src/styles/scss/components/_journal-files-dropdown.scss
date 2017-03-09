@@ -4,10 +4,11 @@
   $expander-toggle-arrow-size: $expander-toggle-size;
   $expander-toggle-margin: 1em;
 
-  width: 60%;
+  //width: 60%;
 
   .expander-trigger {
     @extend .p-button--positive;
+    width: initial;
     /*border-bottom: $base-border;*/
     /*color: $color-link;*/
     /*cursor: pointer;*/

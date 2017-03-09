@@ -12,13 +12,49 @@
 }
 
 .slicknav_nav {
-h2 {
+  &.slicknav_hidden nav {
 
-  margin: 0;
+
+  }
+  //display:block  !important;
+  //titles
+  .block {
+
+  }
+  h2 {
+
+    text-align: center;
+  }
+  .menu--main h2 {
+
+    margin-top: 0  !important;
+
+  }
+  .menu--linksmenu h2 {
+
+    margin-top: 1rem;
+
+  }
+  ul.menu {
+
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px dotted $color-blue-grey;
+    margin-bottom: 10px 0 !important;
+  }
+  li {
+
+    text-align: center;
+
+  }
+  a {
+
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0;
+
+  }
 
 }
 
 
-
-
-}

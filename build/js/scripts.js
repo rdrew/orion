@@ -19,7 +19,11 @@
     $(this).toggleClass("expander-hidden");
   });
 
-$('.region-sidebar-first').slicknav();
+$('.region-sidebar-first').slicknav({
+
+  label: 'Menu'
+
+});
 
 
   //// To understand behaviors, see https://drupal.org/node/756722#behaviors
