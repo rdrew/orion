@@ -2407,36 +2407,41 @@ sub {
   line-height: .7;
   /*color: $color-green;*/ }
 
-.expander {
-  width: 60%; }
-  .expander .expander-trigger {
-    /*border-bottom: $base-border;*/
-    /*color: $color-link;*/
-    /*cursor: pointer;*/
-    /*display: block;*/
-    /*font-size: $expander-toggle-size;*/
-    /*margin-bottom: $expander-toggle-size;*/
-    /*padding-bottom: $expander-toggle-size / 4;*/
-    /*text-decoration: none;*/
-    /*user-select: none;*/ }
-    .expander .expander-trigger::before {
-      content: "\25BC";
-      font-size: 0.7em;
-      margin-right: 0.5em; }
-  .expander .expander-content p {
-    /*color: $base-font-color;*/
-    /*line-height: $base-line-height;*/ }
-  .expander .expander-hidden::before {
-    content: "\25BA";
-    font-size: 0.7em; }
-  .expander .expander-hidden + .expander-content {
-    display: none; }
+.expander .expander-trigger {
+  width: initial;
+  /*border-bottom: $base-border;*/
+  /*color: $color-link;*/
+  /*cursor: pointer;*/
+  /*display: block;*/
+  /*font-size: $expander-toggle-size;*/
+  /*margin-bottom: $expander-toggle-size;*/
+  /*padding-bottom: $expander-toggle-size / 4;*/
+  /*text-decoration: none;*/
+  /*user-select: none;*/ }
+  .expander .expander-trigger::before {
+    content: "\25BC";
+    font-size: 0.7em;
+    margin-right: 0.5em; }
+
+.expander .expander-content p {
+  /*color: $base-font-color;*/
+  /*line-height: $base-line-height;*/ }
+
+.expander .expander-hidden::before {
+  content: "\25BA";
+  font-size: 0.7em; }
+
+.expander .expander-hidden + .expander-content {
+  display: none; }
 
 .page-node-type-book .page-title {
   display: none; }
 
 #block-orion-local-tasks {
   display: none; }
+
+.sidebar .menu li {
+  padding-bottom: .2rem; }
 
 @media screen and (min-width: 800px) {
   .slicknav_menu {
@@ -2446,7 +2451,27 @@ sub {
   display: none; }
 
 .slicknav_nav h2 {
-  margin: 0; }
+  text-align: center; }
+
+.slicknav_nav .menu--main h2 {
+  margin-top: 0  !important; }
+
+.slicknav_nav .menu--linksmenu h2 {
+  margin-top: 1rem; }
+
+.slicknav_nav ul.menu {
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px dotted #80a4bb;
+  margin-bottom: 10px 0 !important; }
+
+.slicknav_nav li {
+  text-align: center; }
+
+.slicknav_nav a {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0; }
 
 #page {
   *zoom: 1;
@@ -2587,6 +2612,12 @@ footer {
   .site-search .form-item {
     display: inline-block;
     margin: 0; }
+  .site-search input[type='submit'] {
+    border-radius: 4px;
+    background-color: #007399;
+    border: 0;
+    color: #fff;
+    padding: .75rem 1.5rem; }
 
 @media screen and (min-width: 800px) {
   #search-block-form {

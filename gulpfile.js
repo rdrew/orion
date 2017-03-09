@@ -141,6 +141,7 @@ gulp.task("browserSync", ["sass_dev", "js"], function() {
     proxy: {
       target: config.remoteURL
     },
+    open: false,
     rewriteRules: [
       {
         match: _regex,
