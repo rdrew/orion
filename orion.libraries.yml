@@ -2,7 +2,7 @@ global-css:
   css:
     theme:
       build/css/styles.css: {}
-
+       
 global-js:
   js:
     build/js/scripts.js: {}
@@ -12,8 +12,8 @@ global-js:
 slicknav:
   js: 
     build/js/jquery.slicknav.js: {}
-  #css: 
-    #theme: 
-      #build/css/slicknav.css: {}
+    #css: 
+      #theme: 
+        #build/css/slicknav.css: {}
 
 

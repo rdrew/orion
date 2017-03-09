@@ -8,8 +8,8 @@ screenshot: screenshot.gif
 
 libraries: 
   - orion/global-css
-  - orion/global-js
   - orion/slicknav
+  - orion/global-js
 
 # The "libraries-override:" section will allow you to:
 # - Replace an entire library.
