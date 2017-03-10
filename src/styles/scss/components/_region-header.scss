@@ -11,13 +11,13 @@
     @include row-base;
 
     .branding {
-      @include column(6, $first: true);
+      @include column(9, $first: true);
 
 
     }
     .site-search {
 
-      @include column(6);
+      @include column(3);
 
 
     }
