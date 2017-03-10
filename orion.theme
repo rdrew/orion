@@ -1,6 +1,55 @@
 <?php
 
 
+/**
+ * hook_theme_suggestions_HOOK_alter()
+*/
+
+function orion_theme_suggestions_field_alter(array &$suggestions, array $variables) {
+  // kint($variables['element']['#bundle']);
+
+  // User bundle
+
+    // kint($variables);
+    // creates template suggestions
+    // field--[bundle]--field--[type]--[viemode]
+    // examples:
+    // field--user--field--image--compact.html.twig
+    // field--user--field--image.html.twig
+    $suggestions[] = 'field__' . $variables['element']['#bundle'] .'__field__' . $variables['element']['#field_type'] ;
+    $suggestions[] = 'field__' . $variables['element']['#bundle'] .'__field__' . $variables['element']['#field_type'] . '__' . $variables['element']['#view_mode'];
+  //}
+}
+
+
+
+function orion_theme_suggestions_container_alter(array &$suggestions, array $variables) {
+  // provide a container__[name] template suggestion for containers
+  // we use this to remove the front container ex (look in /templates/_cleanup)
+  // as well as wrappers on thegoddamn forms
+
+  // this is for form wrappers
+  if (isset($variables['element']['#id'])){
+    $suggestions[] = 'container__' . $variables['element']['#id'];
+  }
+
+  //test if this fucker is always used on forms
+  if (isset($variables['element']['widget']['#theme'])){
+    $suggestions[] = 'form_container';
+  }
+
+  // ex container or actions on forms
+  if (isset($variables['element']['#type'])){
+    $suggestions[] = 'container__' . $variables['element']['#type'];
+  }
+
+  // frontpage content wrapper & others - we used this to remove that wrapper on
+  //frontpage and overwrites with /_cleanup/container/frontpage.html.twig
+  if (isset($variables['element']['#name'])){
+    $suggestions[] = 'container__' . $variables['element']['#name'];
+  }
+}
+
 
 /**
  * This would add a js file to olny the front page
@@ -9,11 +58,13 @@
 function orion_preprocess_page(&$variables) {
   //if ($variables['is_front']) {
   //
-    //$variables['#attached']['library'][] = 'orion/fancy-effect';
+  //$variables['#attached']['library'][] = 'orion/fancy-effect';
   //}
 }
 
-
+/**
+ * add sidebar classes
+ */
 
 function orion_preprocess_html(&$variables) {
   // Add information about the number of sidebars.
