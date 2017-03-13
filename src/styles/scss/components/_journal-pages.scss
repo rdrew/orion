@@ -1,10 +1,35 @@
+
+nav.tabs {
+
+  @extend .p-navigation;
+
+  ul {
+
+    @extend .p-navigation__links;
+
+  }
+  li {
+
+    @extend .p-navigation__link;
+
+    padding: 0;
+    &:hover, &.is-active {
+    
+      background: rgba(247, 247, 247, 0.32);
+    
+    }
+  }
+
+}
+
+
 .page-node-type-book .page-title {
   display: none;
 
 
 }
 #block-orion-local-tasks{
-  display:none;
+  /*display:none;*/
 }
 .menu--account ul {
 
@@ -21,7 +46,7 @@
 .sidebar .menu {
 
   li {
-   padding-bottom: .2rem; 
+    padding-bottom: .2rem; 
   }
 
 

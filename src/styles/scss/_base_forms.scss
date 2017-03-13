@@ -75,7 +75,8 @@
       background-color: $color-positive;
       border: 0;
       color: $color-x-light;
-      padding: .75rem 1.5rem;
+      padding: .5rem 1rem;
+      font-weight:500;
 
       &:hover {
         background-color: darken($color-positive, 20%);
