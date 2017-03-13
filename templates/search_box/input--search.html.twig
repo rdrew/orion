@@ -14,4 +14,4 @@
 <span class="icon__wrapper">
   {% include 'themes/orion/templates/search_box/search.svg' %}
 </span>
-<input{{ attributes }} />{{ children }}
+<input{{ attributes.setAttribute('placeholder', 'Search') }} />{{ children }}
