@@ -1,0 +1,22 @@
+select {
+
+  min-height: initial;
+  /*width: 3rem;*/
+
+}
+td {
+  padding: .5rem;
+  
+}
+.dropbutton .dropbutton-action > * {
+    padding: .5rem;
+  }
+.dropbutton-widget {
+    padding: 2px;
+  }
+
+  a#edit-delete {
+  
+    @extend .p-button--negative;
+  
+  }
