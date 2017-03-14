@@ -34,6 +34,10 @@ libraries-override:
         css/components/item-list.css: false
         css/components/dropbutton.css: false
 
+ckeditor_stylesheets:
+  - build/css/styles.css
+
+
 
 
 # This section lists the regions defined in Zen's default page.html.twig and
