@@ -1,6 +1,6 @@
 
-//$layout_max_width: 1200px;
-$layout_max_width: 1440px;
+$layout_max_width: $grid-max-width;
+//$layout_max_width: 1440px;
 
 #page {
   @include row($layout_max_width);
@@ -58,3 +58,5 @@ $layout_max_width: 1440px;
     }
   }
 }
+
+
