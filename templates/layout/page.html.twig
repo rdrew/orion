@@ -70,11 +70,11 @@
     <div id="main-wrapper" class="layout-main-wrapper layout-container clearfix">
       <div id="main" class="layout-main clearfix">
         <main id="content" class="column main-content" role="main">
-          <section class="section">
-            {{ page.breadcrumb }}
-            <a id="main-content" tabindex="-1"></a>
-            {{ page.content }}
-          </section>
+        <section class="section">
+          {{ page.breadcrumb }}
+          <a id="main-content" tabindex="-1"></a>
+          {{ page.content }}
+        </section>
         </main>
         {% if page.sidebar_first %}
           <div id="sidebar-first" class="column sidebar">
@@ -100,5 +100,42 @@
 
       </div>
     </footer>    
+    {#grid guidelines#}
+
+    <div class="guidelines">
+      <div class="container">
+        <div class="row visible-desktop">
+          <div class="column-1"><div class="guide">1</div></div>
+          <div class="column-1"><div class="guide">2</div></div>
+          <div class="column-1"><div class="guide">3</div></div>
+          <div class="column-1"><div class="guide">4</div></div>
+          <div class="column-1"><div class="guide">5</div></div>
+          <div class="column-1"><div class="guide">6</div></div>
+          <div class="column-1"><div class="guide">7</div></div>
+          <div class="column-1"><div class="guide">8</div></div>
+          <div class="column-1"><div class="guide">9</div></div>
+          <div class="column-1"><div class="guide">10</div></div>
+          <div class="column-1"><div class="guide">11</div></div>
+          <div class="column-1"><div class="guide">12</div></div>
+        </div>
+        <div class="row visible-tablet">
+          <div class="column-2 tablet-column-1"><div class="guide">1</div></div>
+          <div class="column-2 tablet-column-1"><div class="guide">2</div></div>
+          <div class="column-2 tablet-column-1"><div class="guide">3</div></div>
+          <div class="column-2 tablet-column-1"><div class="guide">4</div></div>
+          <div class="column-2 tablet-column-1"><div class="guide">5</div></div>
+          <div class="column-2 tablet-column-1"><div class="guide">6</div></div>
+        </div>
+        <div class="row visible-mobile">
+          <div class="column-3 mobile-column-1"><div class="guide">1</div></div>
+          <div class="column-3 mobile-column-1"><div class="guide">2</div></div>
+          <div class="column-3 mobile-column-1"><div class="guide">3</div></div>
+          <div class="column-3 mobile-column-1"><div class="guide">4</div></div>
+        </div>
+      </div>
+    </div>
+
+
+    {#end grid guidelines#}
   </div>{# /#page #}
 </div>{# /#page-wrapper #}
