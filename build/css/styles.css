@@ -2398,7 +2398,7 @@ sub {
     .p-button--positive, .expander .expander-trigger {
       width: auto; } }
 
-.p-button--negative, a#edit-delete {
+.p-button--negative, .node-book-form a#edit-delete {
   background-color: #d73024;
   border-color: #d73024;
   border-radius: .125rem;
@@ -2422,20 +2422,20 @@ sub {
   -webkit-transition: background-color .2s;
   transition: background-color .2s;
   width: 100%; }
-  .p-button--negative:visited, a#edit-delete:visited {
+  .p-button--negative:visited, .node-book-form a#edit-delete:visited {
     color: #fff; }
-  .p-button--negative:active, a#edit-delete:active, .p-button--negative:focus, a#edit-delete:focus, .p-button--negative:hover, a#edit-delete:hover {
+  .p-button--negative:active, .node-book-form a#edit-delete:active, .p-button--negative:focus, .node-book-form a#edit-delete:focus, .p-button--negative:hover, .node-book-form a#edit-delete:hover {
     background-color: #ab261d;
     border-color: #ab261d;
     text-decoration: none; }
-  .p-button--negative:disabled, a#edit-delete:disabled, .p-button--negative.is--disabled, a.is--disabled#edit-delete {
+  .p-button--negative:disabled, .node-book-form a#edit-delete:disabled, .p-button--negative.is--disabled, .node-book-form a.is--disabled#edit-delete {
     cursor: not-allowed;
     opacity: .5; }
-    .p-button--negative:disabled:active, a#edit-delete:disabled:active, .p-button--negative:disabled:focus, a#edit-delete:disabled:focus, .p-button--negative:disabled:hover, a#edit-delete:disabled:hover, .p-button--negative.is--disabled:active, a.is--disabled#edit-delete:active, .p-button--negative.is--disabled:focus, a.is--disabled#edit-delete:focus, .p-button--negative.is--disabled:hover, a.is--disabled#edit-delete:hover {
+    .p-button--negative:disabled:active, .node-book-form a#edit-delete:disabled:active, .p-button--negative:disabled:focus, .node-book-form a#edit-delete:disabled:focus, .p-button--negative:disabled:hover, .node-book-form a#edit-delete:disabled:hover, .p-button--negative.is--disabled:active, .node-book-form a.is--disabled#edit-delete:active, .p-button--negative.is--disabled:focus, .node-book-form a.is--disabled#edit-delete:focus, .p-button--negative.is--disabled:hover, .node-book-form a.is--disabled#edit-delete:hover {
       background-color: #d73024;
       border-color: #d73024; }
   @media only screen and (min-width: 800px) {
-    .p-button--negative, a#edit-delete {
+    .p-button--negative, .node-book-form a#edit-delete {
       width: auto; } }
 
 .p-button--base {
@@ -3212,6 +3212,15 @@ sub {
   padding: 7px 12px;
   height: 44px; }
 
+.admin-button {
+  margin-left: .75rem;
+  padding: .25rem .75rem; }
+  .admin-button__icon svg {
+    width: 20px;
+    height: 20px; }
+  .admin-button__text {
+    /*display:none;*/ }
+
 body {
   border-top: 6px solid #007399; }
 
@@ -3254,18 +3263,36 @@ body {
 .expander .expander-hidden + .expander-content {
   display: none; }
 
-select {
+.node-book-form select {
   min-height: initial;
   /*width: 3rem;*/ }
 
-td {
+.node-book-form td {
   padding: .5rem; }
 
-.dropbutton .dropbutton-action > * {
+.node-book-form .dropbutton .dropbutton-action > * {
   padding: .5rem; }
 
-.dropbutton-widget {
+.node-book-form .dropbutton-widget {
   padding: 2px; }
+
+.node-book-form .vertical-tabs__pane input,
+.node-book-form .vertical-tabs__pane select {
+  width: initial; }
+
+.node-book-form .vertical-tabs {
+  padding: 0;
+  margin: 0; }
+
+.node-book-form .vertical-tabs__menu {
+  display: none; }
+
+.node-book-form label {
+  font-size: 1.2rem;
+  font-weight: 500; }
+
+.node-book-form .filter-wrapper {
+  display: none; }
 
 nav.tabs li {
   padding: 0; }
@@ -3543,6 +3570,50 @@ footer {
 @media screen and (min-width: 800px) {
   #search-block-form {
     text-align: right; } }
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  /*border-bottom: 1px dotted black; [> If you want dots under the hoverable text <]*/ }
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #007399;
+  color: #fff;
+  text-align: center;
+  line-height: 1.2;
+  padding: 5px 0;
+  box-shadow: 0 1px 5px 1px rgba(18, 18, 18, 0.2);
+  border-radius: 6px;
+  /*transition:  $base-duration $base-timing;*/
+  -webkit-transition: all 150ms ease;
+  transition: all 150ms ease;
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+  width: 120px;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+  /* Use half of the width (120/2 = 60), to center the tooltip */ }
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible; }
+
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  top: 100%;
+  /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #007399 transparent transparent transparent; }
 
 h1,
 .p-heading--one {

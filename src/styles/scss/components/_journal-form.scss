@@ -1,22 +1,50 @@
-select {
+.node-book-form {
+  select {
 
-  min-height: initial;
-  /*width: 3rem;*/
+    min-height: initial;
+    /*width: 3rem;*/
 
-}
-td {
-  padding: .5rem;
-  
-}
-.dropbutton .dropbutton-action > * {
+  }
+  td {
+    padding: .5rem;
+
+  }
+  .dropbutton .dropbutton-action > * {
     padding: .5rem;
   }
-.dropbutton-widget {
+  .dropbutton-widget {
     padding: 2px;
   }
 
   a#edit-delete {
-  
+
     @extend .p-button--negative;
+
+  }
+  .vertical-tabs__pane {
+    input,
+    select {
+
+      width: initial;
+    }
+
+  }
+  .vertical-tabs {
+    padding: 0;
+    margin:0;
+  }
+  .vertical-tabs__menu {
+
+    display:none;
+
+  }
+  label {
+  
+    font-size:1.2rem;
+    font-weight:500;
   
   }
+  .filter-wrapper {
+  display:none;
+  }
+}
