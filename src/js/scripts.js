@@ -19,13 +19,13 @@
     $(this).toggleClass("expander-hidden");
   });
 
-$('.region-sidebar-first').slicknav({
+  $('.region-sidebar-first').slicknav({
 
-  label: 'Menu'
+    label: 'Menu'
 
-});
+  });
 
-
+  $('.menu-link-form .form-type-checkbox').remove();
   //// To understand behaviors, see https://drupal.org/node/756722#behaviors
   //Drupal.behaviors.my_custom_behavior = {
   //attach: function (context, settings) {

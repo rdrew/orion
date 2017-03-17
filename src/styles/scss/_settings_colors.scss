@@ -41,3 +41,8 @@ $base-border: 1px solid $color-light-grey;
 $dotted-border: 1px dotted $color-light-grey;
 $big-border:  3px solid $color-light-grey;
 $base-border-radius: .125rem;
+$base-box-shadow: 0 1px 5px 1px hsla(0,0%,7%,.2);
+
+// Animations
+ $base-timing: ease;
+ $base-duration: 150ms;
