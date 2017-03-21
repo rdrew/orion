@@ -1,17 +1,25 @@
-.admin-button {
-  margin-left: .75rem;
-  padding: .25rem .75rem;
-
-  &__icon {
-    svg {
-
-      width:20px;
-      height: 20px;
-    }
+#block-journaleditormenu {
+  .contextual {
+    display: none;
   }
-  &__text {
+  .menu { 
+    @extend .p-inline-list;
+    margin: 0;
+    li { 
+      @extend .p-inline-list__item;
 
-    /*display:none;*/
-  }
+      margin: 0;
+      a {
+        @extend .p-button--neutral;
+        padding:5px;
+        font-size: .9rem;
+        font-weight:300;
+        color: #333;
+      }
+      a:hover {
+        text-decoration: none;
+        background: $color-brand;
+        color:#fff;
+      }
 
-}
+} } }
