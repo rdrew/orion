@@ -1,4 +1,8 @@
-.node-book-form {
+.vertical-tabs__menu {
+
+
+}
+.node-book-edit-form {
   select {
 
     min-height: initial;
@@ -32,6 +36,10 @@
   .vertical-tabs {
     padding: 0;
     margin:0;
+  }
+  .tabledrag-toggle-weight {
+    display:none;
+  
   }
   .vertical-tabs__menu {
 

@@ -1251,11 +1251,11 @@ img {
   .p-list--divided .p-list__item:last-of-type, .p-list--divided .p-list__item .last-item {
     border-bottom: 0; }
 
-.p-inline-list__item, .menu--account ul li, .p-inline-list--middot .p-inline-list__item, .menu--account ul .p-inline-list__item, .p-inline-list--middot .menu--account ul li, .menu--account ul .p-inline-list--middot li {
+.p-inline-list__item, #block-journaleditormenu .menu li, .menu--account ul li, .p-inline-list--middot .p-inline-list__item, .menu--account ul .p-inline-list__item, .p-inline-list--middot .menu--account ul li, .menu--account ul .p-inline-list--middot li {
   display: inline;
   list-style: none;
   margin-right: 1.25rem; }
-  .p-inline-list__item:last-of-type, .menu--account ul li:last-of-type, .p-inline-list__item .last-item, .menu--account ul li .last-item {
+  .p-inline-list__item:last-of-type, #block-journaleditormenu .menu li:last-of-type, .menu--account ul li:last-of-type, .p-inline-list__item .last-item, #block-journaleditormenu .menu li .last-item, .menu--account ul li .last-item {
     margin-right: 0; }
 
 .p-notification, .p-notification--positive, .p-notification--warning, .p-notification--negative {
@@ -2278,7 +2278,7 @@ sub {
     .p-button {
       width: auto; } }
 
-.p-button--neutral {
+.p-button--neutral, #block-journaleditormenu .menu li a {
   background-color: #fff;
   border-color: #666;
   border-radius: .125rem;
@@ -2302,20 +2302,20 @@ sub {
   -webkit-transition: background-color .2s;
   transition: background-color .2s;
   width: 100%; }
-  .p-button--neutral:visited {
+  .p-button--neutral:visited, #block-journaleditormenu .menu li a:visited {
     color: #000; }
-  .p-button--neutral:active, .p-button--neutral:focus, .p-button--neutral:hover {
+  .p-button--neutral:active, #block-journaleditormenu .menu li a:active, .p-button--neutral:focus, #block-journaleditormenu .menu li a:focus, .p-button--neutral:hover, #block-journaleditormenu .menu li a:hover {
     background-color: rgba(0, 0, 0, 0.1);
     border-color: #666;
     text-decoration: none; }
-  .p-button--neutral:disabled, .p-button--neutral.is--disabled {
+  .p-button--neutral:disabled, #block-journaleditormenu .menu li a:disabled, .p-button--neutral.is--disabled, #block-journaleditormenu .menu li a.is--disabled {
     cursor: not-allowed;
     opacity: .5; }
-    .p-button--neutral:disabled:active, .p-button--neutral:disabled:focus, .p-button--neutral:disabled:hover, .p-button--neutral.is--disabled:active, .p-button--neutral.is--disabled:focus, .p-button--neutral.is--disabled:hover {
+    .p-button--neutral:disabled:active, #block-journaleditormenu .menu li a:disabled:active, .p-button--neutral:disabled:focus, #block-journaleditormenu .menu li a:disabled:focus, .p-button--neutral:disabled:hover, #block-journaleditormenu .menu li a:disabled:hover, .p-button--neutral.is--disabled:active, #block-journaleditormenu .menu li a.is--disabled:active, .p-button--neutral.is--disabled:focus, #block-journaleditormenu .menu li a.is--disabled:focus, .p-button--neutral.is--disabled:hover, #block-journaleditormenu .menu li a.is--disabled:hover {
       background-color: transparent;
       border-color: #666; }
   @media only screen and (min-width: 800px) {
-    .p-button--neutral {
+    .p-button--neutral, #block-journaleditormenu .menu li a {
       width: auto; } }
 
 .p-button--brand {
@@ -2398,7 +2398,7 @@ sub {
     .p-button--positive, .expander .expander-trigger {
       width: auto; } }
 
-.p-button--negative, .node-book-form a#edit-delete {
+.p-button--negative, .node-book-edit-form a#edit-delete {
   background-color: #d73024;
   border-color: #d73024;
   border-radius: .125rem;
@@ -2422,20 +2422,20 @@ sub {
   -webkit-transition: background-color .2s;
   transition: background-color .2s;
   width: 100%; }
-  .p-button--negative:visited, .node-book-form a#edit-delete:visited {
+  .p-button--negative:visited, .node-book-edit-form a#edit-delete:visited {
     color: #fff; }
-  .p-button--negative:active, .node-book-form a#edit-delete:active, .p-button--negative:focus, .node-book-form a#edit-delete:focus, .p-button--negative:hover, .node-book-form a#edit-delete:hover {
+  .p-button--negative:active, .node-book-edit-form a#edit-delete:active, .p-button--negative:focus, .node-book-edit-form a#edit-delete:focus, .p-button--negative:hover, .node-book-edit-form a#edit-delete:hover {
     background-color: #ab261d;
     border-color: #ab261d;
     text-decoration: none; }
-  .p-button--negative:disabled, .node-book-form a#edit-delete:disabled, .p-button--negative.is--disabled, .node-book-form a.is--disabled#edit-delete {
+  .p-button--negative:disabled, .node-book-edit-form a#edit-delete:disabled, .p-button--negative.is--disabled, .node-book-edit-form a.is--disabled#edit-delete {
     cursor: not-allowed;
     opacity: .5; }
-    .p-button--negative:disabled:active, .node-book-form a#edit-delete:disabled:active, .p-button--negative:disabled:focus, .node-book-form a#edit-delete:disabled:focus, .p-button--negative:disabled:hover, .node-book-form a#edit-delete:disabled:hover, .p-button--negative.is--disabled:active, .node-book-form a.is--disabled#edit-delete:active, .p-button--negative.is--disabled:focus, .node-book-form a.is--disabled#edit-delete:focus, .p-button--negative.is--disabled:hover, .node-book-form a.is--disabled#edit-delete:hover {
+    .p-button--negative:disabled:active, .node-book-edit-form a#edit-delete:disabled:active, .p-button--negative:disabled:focus, .node-book-edit-form a#edit-delete:disabled:focus, .p-button--negative:disabled:hover, .node-book-edit-form a#edit-delete:disabled:hover, .p-button--negative.is--disabled:active, .node-book-edit-form a.is--disabled#edit-delete:active, .p-button--negative.is--disabled:focus, .node-book-edit-form a.is--disabled#edit-delete:focus, .p-button--negative.is--disabled:hover, .node-book-edit-form a.is--disabled#edit-delete:hover {
       background-color: #d73024;
       border-color: #d73024; }
   @media only screen and (min-width: 800px) {
-    .p-button--negative, .node-book-form a#edit-delete {
+    .p-button--negative, .node-book-edit-form a#edit-delete {
       width: auto; } }
 
 .p-button--base {
@@ -2807,16 +2807,16 @@ sub {
   .p-list--divided .is-ticked {
     background-position: 0 1rem; }
 
-.p-inline-list {
+.p-inline-list, #block-journaleditormenu .menu {
   margin-left: 0;
   padding-left: 0; }
 
 .p-inline-list--middot, .menu--account ul {
   margin-left: 0;
   padding-left: 0; }
-  .p-inline-list--middot .p-inline-list__item, .menu--account ul .p-inline-list__item, .p-inline-list--middot .menu--account ul li, .menu--account ul .p-inline-list--middot li, .menu--account ul li {
+  .p-inline-list--middot .p-inline-list__item, .menu--account ul .p-inline-list__item, .p-inline-list--middot #block-journaleditormenu .menu li, #block-journaleditormenu .menu .p-inline-list--middot li, .menu--account ul #block-journaleditormenu .menu li, #block-journaleditormenu .menu .menu--account ul li, .p-inline-list--middot .menu--account ul li, .menu--account ul .p-inline-list--middot li, .menu--account ul li {
     position: relative; }
-    .p-inline-list--middot .p-inline-list__item::after, .menu--account ul .p-inline-list__item::after, .p-inline-list--middot .menu--account ul li::after, .menu--account ul .p-inline-list--middot li::after, .menu--account ul li::after {
+    .p-inline-list--middot .p-inline-list__item::after, .menu--account ul .p-inline-list__item::after, .p-inline-list--middot #block-journaleditormenu .menu li::after, #block-journaleditormenu .menu .p-inline-list--middot li::after, .menu--account ul #block-journaleditormenu .menu li::after, #block-journaleditormenu .menu .menu--account ul li::after, .p-inline-list--middot .menu--account ul li::after, .menu--account ul .p-inline-list--middot li::after, .menu--account ul li::after {
       color: #666;
       content: '\00b7';
       font-size: 1.4rem;
@@ -2824,10 +2824,12 @@ sub {
       position: absolute;
       right: -1rem;
       top: .55rem; }
-    .p-inline-list--middot .p-inline-list__item:hover::after, .menu--account ul .p-inline-list__item:hover::after, .p-inline-list--middot .menu--account ul li:hover::after, .menu--account ul .p-inline-list--middot li:hover::after, .menu--account ul li:hover::after {
+    .p-inline-list--middot .p-inline-list__item:hover::after, .menu--account ul .p-inline-list__item:hover::after, .p-inline-list--middot #block-journaleditormenu .menu li:hover::after, #block-journaleditormenu .menu .p-inline-list--middot li:hover::after, .menu--account ul #block-journaleditormenu .menu li:hover::after, #block-journaleditormenu .menu .menu--account ul li:hover::after, .p-inline-list--middot .menu--account ul li:hover::after, .menu--account ul .p-inline-list--middot li:hover::after, .menu--account ul li:hover::after {
       color: #666; }
-    .p-inline-list--middot .p-inline-list__item:last-of-type::after, .menu--account ul .p-inline-list__item:last-of-type::after, .p-inline-list--middot .menu--account ul li:last-of-type::after, .menu--account ul .p-inline-list--middot li:last-of-type::after, .menu--account ul li:last-of-type::after,
+    .p-inline-list--middot .p-inline-list__item:last-of-type::after, .menu--account ul .p-inline-list__item:last-of-type::after, .p-inline-list--middot #block-journaleditormenu .menu li:last-of-type::after, #block-journaleditormenu .menu .p-inline-list--middot li:last-of-type::after, .menu--account ul #block-journaleditormenu .menu li:last-of-type::after, #block-journaleditormenu .menu .menu--account ul li:last-of-type::after, .p-inline-list--middot .menu--account ul li:last-of-type::after, .menu--account ul .p-inline-list--middot li:last-of-type::after, .menu--account ul li:last-of-type::after,
     .p-inline-list--middot .p-inline-list__item .last-item::after, .menu--account ul .p-inline-list__item .last-item::after,
+    .p-inline-list--middot #block-journaleditormenu .menu li .last-item::after, #block-journaleditormenu .menu
+    .p-inline-list--middot li .last-item::after, .menu--account ul #block-journaleditormenu .menu li .last-item::after, #block-journaleditormenu .menu .menu--account ul li .last-item::after,
     .p-inline-list--middot .menu--account ul li .last-item::after, .menu--account ul
     .p-inline-list--middot li .last-item::after, .menu--account ul li .last-item::after {
       content: ''; }
@@ -3212,14 +3214,22 @@ sub {
   padding: 7px 12px;
   height: 44px; }
 
-.admin-button {
-  margin-left: .75rem;
-  padding: .25rem .75rem; }
-  .admin-button__icon svg {
-    width: 20px;
-    height: 20px; }
-  .admin-button__text {
-    /*display:none;*/ }
+#block-journaleditormenu .contextual {
+  display: none; }
+
+#block-journaleditormenu .menu {
+  margin: 0; }
+  #block-journaleditormenu .menu li {
+    margin: 0; }
+    #block-journaleditormenu .menu li a {
+      padding: 5px;
+      font-size: .9rem;
+      font-weight: 300;
+      color: #333; }
+    #block-journaleditormenu .menu li a:hover {
+      text-decoration: none;
+      background: #007399;
+      color: #fff; }
 
 body {
   border-top: 6px solid #007399; }
@@ -3263,35 +3273,38 @@ body {
 .expander .expander-hidden + .expander-content {
   display: none; }
 
-.node-book-form select {
+.node-book-edit-form select {
   min-height: initial;
   /*width: 3rem;*/ }
 
-.node-book-form td {
+.node-book-edit-form td {
   padding: .5rem; }
 
-.node-book-form .dropbutton .dropbutton-action > * {
+.node-book-edit-form .dropbutton .dropbutton-action > * {
   padding: .5rem; }
 
-.node-book-form .dropbutton-widget {
+.node-book-edit-form .dropbutton-widget {
   padding: 2px; }
 
-.node-book-form .vertical-tabs__pane input,
-.node-book-form .vertical-tabs__pane select {
+.node-book-edit-form .vertical-tabs__pane input,
+.node-book-edit-form .vertical-tabs__pane select {
   width: initial; }
 
-.node-book-form .vertical-tabs {
+.node-book-edit-form .vertical-tabs {
   padding: 0;
   margin: 0; }
 
-.node-book-form .vertical-tabs__menu {
+.node-book-edit-form .tabledrag-toggle-weight {
   display: none; }
 
-.node-book-form label {
+.node-book-edit-form .vertical-tabs__menu {
+  display: none; }
+
+.node-book-edit-form label {
   font-size: 1.2rem;
   font-weight: 500; }
 
-.node-book-form .filter-wrapper {
+.node-book-edit-form .filter-wrapper {
   display: none; }
 
 nav.tabs li {
